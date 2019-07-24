@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-const height = '700px';
-const width = '600px';
+const height = '450px';
+const width = '400px';
 
 export const Container = styled.div`
   z-index: 10;
@@ -12,7 +12,7 @@ export const Container = styled.div`
   height: ${height};
   width: ${width};
   position: absolute;
-  top: calc(50% - ${height} / 2);
+  top: calc(40% - ${height} / 2);
   left: calc(50% - ${width} / 2);
   box-shadow: 0px 0px 20px #444444aa;
 
@@ -31,7 +31,19 @@ export const Container = styled.div`
 
     h1 {
       color: white;
-      font-size: 5em;
+      font-size: 34px;
     }
+  }
+
+  div.div-form {
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
   }
 `;
